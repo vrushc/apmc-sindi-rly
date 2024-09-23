@@ -1,0 +1,140 @@
+.sanchalak-mandal {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: Arial Unicode MS;
+}
+
+.sanchalak-mandal h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #37517e;
+}
+
+.sanchalak-mandal h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.sanchalak-mandal h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.sanchalak-mandal p {
+  margin-bottom: 0;
+  color:#fff;
+}
+
+.member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 3px;
+  border-radius: 5px;
+  background:#02254e;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+  
+}
+
+.member .pic img {
+  transition: ease-in-out 0.3s;
+  
+}
+
+.member:hover {
+  transform: translateY(-10px);
+}
+
+.member .member-info {
+  padding-left: 30px;
+}
+
+.member h4 {
+  font-weight: 700;
+  margin-top:10px;
+  font-size:17px;
+  color: #fff;
+}
+
+.member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  color:#fff;
+}
+
+.member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width:150px;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.member p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.member .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.member .social a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.member .social a:hover {
+  background: #47b2e4;
+}
+
+.member .social a:hover i {
+  color: #fff;
+}
+
+.member .social a + a {
+  margin-left: 8px;
+}
